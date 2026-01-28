@@ -90,6 +90,19 @@ informative-banners {
     border: 1px solid rgba(34, 33, 33, .3);
 }
 
+/* Comentado pq Estava subindo sobre elementos
+.item {
+    margin-bottom: -60px;
+    padding: 15px 15px 0px 15px;
+}
+
+ Sobrescreve apenas no Mobile para não encavalar 
+@media (max-width: 767px) {
+    .item {
+        margin-bottom: -10px !important;
+    }
+} */
+
 /* --- ALINHAMENTO GLOBAL E ESTILIZAÇÃO (1200px) --- */
 
 /* 1. Banners de Categoria (Destaques) */
