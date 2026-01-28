@@ -1,7 +1,7 @@
 /*  
     Código CSS Personalizado para Lozz Clothing
-
 */
+
 .btn-secondary {
 	display: none;
 	overflow: hidden;
@@ -41,15 +41,17 @@
 	display: none;
 }
 
-.svg-icon-primary {}
+.section-informative-banners {
+    padding: 35px 0;
+}
+
+informative-banners {
+    margin-bottom: 40px;
+}
 
 .btn-primary {
-	padding: 14px;
-	background-color: #212121;
-	color: #fff;
-	fill: #fff;
-	letter-spacing: 2px;
-	font-weight: normal;
+	background-color: #1AB357;
+        font-weight: 600;
 }
 
 .col-4 {
@@ -57,9 +59,8 @@
 	max-width: inherit;
 }
 
-.item-price {
-	font-size: 18px;
-	font-weight: 400;
+.mb-4, .my-4 {
+    margin-bottom: 0px !important;
 }
 
 @media (min-width:768px) {
@@ -69,15 +70,13 @@
 }
 
 .item-price {
-	font-size: 17px;
-	font-weight: 400;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .font-small {
 	font-size: 14px;
 }
-
-element.style {}
 
 @media (min-width:768px) {
 	.font-md-normal {
@@ -172,4 +171,8 @@ element.style {}
     .instafeed-link {
         height: 200px !important; /* Altura ajustada para o grid de 2 colunas */
     }
+}
+
+.fade-in.lazyloaded, .fade-in.swiper-lazy-loaded, .fade-in.image-priority-high {
+    border-radius: 6px;
 }
