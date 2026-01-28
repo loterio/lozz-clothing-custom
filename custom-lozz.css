@@ -100,3 +100,49 @@ element.style {}
 .item-actions {
 	transition: none;
 }
+
+/* 
+Posts Automaticos do Instagram
+Container principal - Forçando o Grid a se organizar em Colunas e Linhas
+*/
+
+.js-ig-success {
+    display: grid !important;       /* Aqui definimos 3 colunas iguais no Desktop */
+    grid-template-columns: repeat(3, 1fr) !important; 
+    gap: 15px !important;
+    max-width: 1000px !important;   /* Deixa a seção mais centralizada e elegante */
+    margin: 40px auto !important;
+}
+
+/* Ajuste individual de cada Card */
+.instafeed-link {
+    width: 100% !important;
+    height: 320px !important;       /* Altura fixa para todos ficarem iguais */
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    position: relative;
+    display: block;
+}
+
+/* Garantindo que a imagem ocupe o card todo (o "Cover") */
+.instafeed-link .instafeed-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    display: block;
+}
+
+/* Ajuste para Mobile (2 colunas para não ficar apertado) */
+@media (max-width: 767px) {
+    .js-ig-success {
+        grid-template-columns: repeat(2, 1fr) !important;
+        padding: 0 15px !important;
+    }
+    .instafeed-link {
+        height: 200px !important;
+    }
+}
