@@ -101,15 +101,15 @@ element.style {}
 	transition: none;
 }
 
-/* --- ALINHAMENTO GLOBAL (1200px) --- */
+/* --- ALINHAMENTO GLOBAL E ESTILIZAÇÃO (1200px) --- */
 
-/* Banners de Categoria */
+/* 1. Banners de Categoria (Destaques) */
 .section-banners-home .row {
     display: flex !important;
     flex-wrap: nowrap !important;
     gap: 20px !important;
     margin: 30px auto !important;
-    max-width: 1200px !important; /* Alinhado com a vitrine */
+    max-width: 1200px !important;
     padding: 0 15px !important;
 }
 
@@ -118,15 +118,22 @@ element.style {}
     padding: 0 !important;
     border-radius: 15px !important;
     overflow: hidden !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06) !important;
 }
 
-/* Instagram Feed */
+.js-category-banner-container img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+}
+
+/* 2. Instagram Feed (Cards Grid) */
 .js-ig-success {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 20px !important;
     margin: 40px auto !important;
-    max-width: 1200px !important; /* Igualado aos banners */
+    max-width: 1200px !important;
     padding: 0 15px !important;
 }
 
@@ -143,3 +150,26 @@ element.style {}
     object-fit: cover !important;
 }
 
+/* 3. CORREÇÃO RESPONSIVA (Mobile) */
+@media (max-width: 767px) {
+    /* Banners: 1 coluna para não cortar o texto */
+    .section-banners-home .row {
+        flex-wrap: wrap !important;
+        gap: 15px !important;
+    }
+    
+    .js-category-banner-container {
+        flex: 0 0 100% !important; /* Ocupa 100% da largura */
+        height: auto !important;
+    }
+
+    /* Instagram: 2 colunas para melhor aproveitamento de tela */
+    .js-ig-success {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 10px !important;
+    }
+
+    .instafeed-link {
+        height: 200px !important; /* Altura ajustada para o grid de 2 colunas */
+    }
+}
