@@ -14,6 +14,10 @@
 	display: none;
 }
 
+.item-actions .btn-secondary {
+      color: #fff;
+}
+
 .section-informative-banners {
     padding: 35px 0;
 }
@@ -80,7 +84,7 @@ informative-banners {
 }
 
 .form-group-inline .btn {
-    padding: 13px 0px 13px 0px;
+    padding: 12px 0px 12px 0px;
     border-radius: 0 10px 10px 0;
     background: #fafafa;
     border: 1px solid rgba(34, 33, 33, .3);
@@ -162,3 +166,4 @@ informative-banners {
 .fade-in.lazyloaded, .fade-in.swiper-lazy-loaded, .fade-in.image-priority-high {
     border-radius: 6px;
 }
+
