@@ -3,33 +3,6 @@
 */
 
 .btn-secondary {
-	display: none;
-	overflow: hidden;
-	border: hidden;
-	letter-spacing: 2px;
-	font-weight: bold;
-}
-
-.svg-icon-primary {
-	display: inline-block;
-}
-
-.btn-secondary {
-	display: none;
-	overflow: hidden;
-	letter-spacing: normal;
-	font-weight: normal;
-}
-
-.btn-secondary {
-	display: none;
-	overflow: hidden;
-	border: hidden;
-	letter-spacing: normal;
-	font-weight: normal;
-}
-
-.btn-secondary {
 	display: inline-block;
 	overflow: hidden;
 	border: hidden;
@@ -67,6 +40,12 @@ informative-banners {
 	.font-md-normal {
 		font-size: 20px;
 	}
+}
+
+@media (min-width: 768px) {
+    .item-description {
+        border-bottom: 0px;
+    }
 }
 
 .item-price {
