@@ -7,10 +7,10 @@
 	overflow: hidden;
 	border: hidden;
 	letter-spacing: normal;
-	font-weight: normal;
+	font-weight: bold;
 }
 
-.svg-icon-primary {
+.item-actions .svg-icon-primary {
 	display: none;
 }
 
@@ -24,7 +24,7 @@ informative-banners {
 
 .btn-primary {
 	background-color: #1AB357;
-        font-weight: 600;
+    font-weight: 600;
 }
 
 .col-4 {
@@ -77,6 +77,13 @@ informative-banners {
 
 .item-actions {
 	transition: none;
+}
+
+.form-group-inline .btn {
+    padding: 13px 0px 13px 0px;
+    border-radius: 0 10px 10px 0;
+    background: #fafafa;
+    border: 1px solid rgba(34, 33, 33, .3);
 }
 
 /* --- ALINHAMENTO GLOBAL E ESTILIZAÇÃO (1200px) --- */
